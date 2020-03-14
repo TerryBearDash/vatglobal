@@ -1,0 +1,105 @@
+.logo {
+    max-width: 100px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.feed-box {
+    display: block;
+    height: 100%;
+    padding: 0 3em;
+    .message-row {
+        width: 100%;
+        margin: 0 0 10px;
+        text-align: right;
+        .title {
+            font-weight: 700;
+            color: var(--vat-color-medium);
+            margin: 0;
+            font-size: 0.8rem;
+        }
+    }
+    .you-row {
+        width: 100%;
+        margin: 0 0 10px;
+        position: relative;
+        padding-left: 30px;
+        .title {
+            font-weight: 700;
+            color: var(--vat-color-primary);
+            margin: 0;
+            font-size: 0.8rem;
+        }
+        img.profileFloater {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            bottom: 0;
+            left: -10px;
+            border: 2px solid var(--vat-color-primary);
+        }
+    }
+    .feed-bubble {
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        position: relative;
+        &.you {
+            color: var(--vat-color-white);
+            background: var(--vat-color-primary);
+            max-width: 80%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .arrow-left {
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: -10px;
+                bottom: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 0px solid transparent;
+                border-right: 10px solid var(--vat-color-primary);
+            }
+        }
+        &.message {
+            color: var(--vat-color-white);
+            background: var(--vat-color-secondary);
+            max-width: 80%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            .arrow-right {
+                width: 0;
+                height: 0;
+                position: absolute;
+                right: -10px;
+                bottom: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 0px solid transparent;
+                border-left: 10px solid var(--vat-color-secondary);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: var(--vat-color-light) !important;
+    }
+    .feed {
+        padding-left: 0;
+        padding-right: 0;
+        background: var(--vat-color-light);
+    }
+    .feed-box {
+        padding: 0 1em;
+    }
+    .feed-input-box {
+        background-color: var(--vat-color-white);
+    }
+}
