@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import {get } from '../../services/api';
+import { get } from '../../services/api';
 import "react-datepicker/dist/react-datepicker.css";
 
 export class Dater extends React.Component {
